@@ -40,7 +40,7 @@
             <input type="submit" value="Submit" onclick="submition()">
          </form>
         </div>
-         <p id="display"></p>
+         <p id="show"></p>
         </div>
        
        <p class="rights"><em>&copyCopyright 2019. @dejongbrian All rights reserved.</em></p>
@@ -70,12 +70,16 @@ else
 
  if (mm <1  || mm>12 || mm==2 && dd>29)
 {
-   alert("invalid");
+   alert("check again");
 }
-else ( dd< 1 || dd>31)
+else if( dd< 1 || dd>31)
 {
-   alert("invalid");
+   alert("check again");
 }
+// {
+//   else
+// }
+{
   if (Math.round(result)==0 && gender==='male')
 {
 document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[0]);

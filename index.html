@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Akan Namer</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
+
 <body background="https://cdn5.vectorstock.com/i/1000x1000/33/09/flag-of-ghana-painted-colors-vector-3303309.jpg">
   <div class="container">
-    <div class="jumbotron">
     <h1><strong>Akan Namer</strong></h1>
     </div>
       <form onsubmit="event.preventDefault()">
@@ -20,13 +22,19 @@
           <p style="font-weight:bold;text-align:center;">Your akan name?<br>
            Enter your birthday date and your gender.</p><br>
           <div>
-            <label>Month</label><br>
-            <input type="text" id="month" placeholder="Month" required><br><br>
-            <label>Day</label><br>
-            <input type="text" id="day" placeholder="Day" required><br><br>
-            <label>Year</label><br>
-            <input type="text" id="year" placeholder="Year" required><br><br>
-        <label>Gender</label><br>
+            <div class="form-group col-md-6">
+              <label>Month</label><br>
+              <input type="text" id="month" placeholder="Month" required min="0" max="12"><br>
+            </div>
+            <div class="form-group col-md-6">
+              <label>Day</label><br>
+              <input type="text" id="day" placeholder="Day" required min="0" max="31"><br>
+            </div>
+            <div class="form-group col-md-6">
+              <label>Year</label><br>
+              <input type="text" id="year" placeholder="Year" required min="0" max="3000"><br>
+            </div>
+            <label>Gender</label><br>
             <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
             <input type="radio" name="gender" value="female"> Female<br><br>
             <input type="submit" value="Submit" onclick="get()">
@@ -39,4 +47,5 @@
   <script src="script.js"></script>
  
 </body>
+
 </html>

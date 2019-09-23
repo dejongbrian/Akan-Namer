@@ -1,5 +1,5 @@
 function submition(){
-  /*initialization*/
+  
   var month=document.getElementById("month").value;
   var mm=parseInt(month);
   var day=document.getElementById("day").value;
@@ -7,7 +7,7 @@ function submition(){
   var year=document.getElementById("year").value;
   var yy=parseInt(year);
   var cc=(yy-1)/100+1;
- /*the formula */
+ 
   var result=parseInt( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7 ;
   var boyNames=["Kwasi","Kwadwo","Dejong","Kwaku","Yaw","Kofi","Kwame"];
   var girlNames=["Akosua"," Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
@@ -23,7 +23,7 @@ function submition(){
  {
     alert("check again");
  }
- else ( dd< 1 || dd>31)
+ else if ( dd< 1 || dd>31)
  {
     alert("check again");
  }
@@ -62,7 +62,7 @@ function submition(){
     document.getElementById("show").innerHTML =  ("Your akan name is "+ girlNames[0]);
   }
  
-  else if(Math.round(result)==1 && gender==='female')
+   else if(Math.round(result)==1 && gender==='female')
   {
     document.getElementById("show").innerHTML = ("Your akan name is "+ girlNames[1]);
   }
@@ -92,4 +92,4 @@ function submition(){
   {
    alert("Enter information");
   }
- 
+}

@@ -15,12 +15,12 @@
 <body background="https://cdn5.vectorstock.com/i/1000x1000/33/09/flag-of-ghana-painted-colors-vector-3303309.jpg">
   <div class="container">
     <h1><strong>Akan Namer</strong></h1>
-    <form>
-
-      <div class="jumbotron">
-        <p style="font-weight:bold;text-align:center;">Your Akan Namer<br>
-        </p><br>
-        <div class="row">
+    </div>
+      <form onsubmit="event.preventDefault()">
+        
+        <div class="jumbotron">
+          <p style="font-weight:bold;text-align:center;">Your akan name?<br>
+           Enter your birthday date and your gender.</p><br>
           <div>
             <div class="form-group col-md-6">
               <label>Month</label><br>
@@ -36,16 +36,16 @@
             </div>
             <label>Gender</label><br>
             <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female" checked> Female<br>
+            <input type="radio" name="gender" value="female"> Female<br><br>
             <input type="submit" value="Submit" onclick="get()">
-    </form>
-  </div>
-  <p id="show"></p>
-  </div>
-
-  <p class="rights"><em>&copyCopyright 2019. @dejongbrian All rights reserved.</em></p>
-
+         </form>
+         <p id="show"></p>
+        </div>
+       </div>
+       <p class="rights"><em>&copyCopyright 2019. All rights reserved.</em></p>
+      
   <script src="script.js"></script>
+ 
 </body>
 
 </html>

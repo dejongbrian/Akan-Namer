@@ -28,7 +28,7 @@ function get(){
     alert("check again");
  }
  
-  if (Math.round(result)==0 && gender==='male')
+  else if (Math.round(result)==0 && gender==='male')
   {
  document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[0]);
  }
@@ -37,7 +37,8 @@ function get(){
   {
     document.getElementById("show").innerHTML =("Your akan name is "+ boyNames[1]);
   }
-  else if (Math.round(result)==2 && gender==='male'){
+  else if (Math.round(result)==2 && gender==='male')
+  {
     document.getElementById("show").innerHTML =("Your akan name is " +boyNames[2]);
   }
   else if (Math.round(result)==3 && gender==='male' )
@@ -57,7 +58,7 @@ function get(){
     document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[6]);
   }
 
-  else if(Math.round(result)==0 && gender==='female')
+  else  if (Math.round(result)==0 && gender==='female')
   {
     document.getElementById("show").innerHTML =  ("Your akan name is "+ girlNames[0]);
   }
@@ -88,7 +89,7 @@ function get(){
     document.getElementById("show").innerHTML = ("Your akan name is "+ girlNames[6]);
   }
   
-  else
+   else
   {
    alert("Enter information");
   }

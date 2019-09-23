@@ -59,24 +59,24 @@
  var result=parseInt( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7 ;
  var boyNames=["Kwasi","Kwadwo","Dejong","Kwaku","Yaw","Kofi","Kwame"];
  var girlNames=["Akosua"," Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
- if (document.getElementById("gender").checked);
+ if (document.getElementById("gender").checked)
  {
    var gender='male';
  }
- else
+else
 {
    var gender='female';
 }
 
-if (mm <1  || mm>12 || mm==2 && dd>29)
+ if (mm <1  || mm>12 || mm==2 && dd>29)
 {
    alert("invalid");
 }
-else if( dd< 1 || dd>31)
+else ( dd< 1 || dd>31)
 {
    alert("invalid");
 }
- else if (Math.round(result)==0 && gender==='male')
+  if (Math.round(result)==0 && gender==='male')
 {
 document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[0]);
 }
@@ -104,9 +104,9 @@ document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[0]);
  {
    document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[6]);
  }
-   else if (Math.round(result)==6 && gender==='male')
+   else (Math.round(result)==6 && gender==='male')
   
-   
+}  
   if (Math.round(result)==0 && gender==='female')
  {
    document.getElementById("show").innerHTML =  ("Your akan name is "+ girlNames[0]);
@@ -131,15 +131,16 @@ document.getElementById("show").innerHTML = ("Your akan name is "+ boyNames[0]);
  {
    document.getElementById("show").innerHTML =  ("Your akan name is "+ girlNames[5]);
  }
- else if (Math.round(result)==6 && gender==='female')
+ else  (Math.round(result)==6 && gender==='female')
  
  {
    document.getElementById("show").innerHTML = ("Your akan name is "+ girlNames[6]);
  }
- else
- {
-  alert("Enter information ");
- }
+
+//  else
+//  {
+//   alert("Enter information ");
+//  }
 </script> 
 </body>
 </html>

@@ -1,4 +1,4 @@
-function submition(){
+function get(){
   
   var month=document.getElementById("month").value;
   var mm=parseInt(month);

@@ -18,28 +18,36 @@
       <form>
         
         <div class="jumbotron">
-          <p style="font-weight:bold;text-align:center;">Your akan name?<br>
-           Enter your birthday date and your gender.</p><br>
+          <p style="font-weight:bold;text-align:center;">Your Akan Namer<br>
+           </p><br>
+           <div class="row">
           <div>
+              <div class="form-group col-md-6">
             <label>Month</label><br>
-            <input type="text" id="month" placeholder="Month" required><br><br>
+            <input class="form-control form-control-lg" type="text" id="month" placeholder="Month" required><br>
+              </div>
+              <div class="form-group col-md-6">
             <label>Day</label><br>
-            <input type="text" id="day" placeholder="Day" required><br><br>
+            <input class="form-control form-control-lg" type="text" id="day" placeholder="Day" required><br>
+              </div>
+              <div class="form-group col-md-6">
             <label>Year</label><br>
-            <input type="text" id="year" placeholder="Year" required><br><br>
+            <input class="form-control form-control-lg" type="text" id="year" placeholder="Year" required><br>
+              </div>
         <label>Gender</label><br>
             <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br><br>
+            <input type="radio" name="gender" id="gender" value="female" checked> Female<br>
             <input type="submit" value="Submit" onclick="submition()">
          </form>
-         <p id="show"></p>
         </div>
-       </div>
-       <p class="rights"><em>&copyCopyright 2019. All rights reserved.</em></p>
+         <p id="display"></p>
+        </div>
+       
+       <p class="rights"><em>&copyCopyright 2019. @dejongbrian All rights reserved.</em></p>
       
   <script>
   function submition(){
- 
+ /*initialization*/
  var month=document.getElementById("month").value;
  var mm=parseInt(month);
  var day=document.getElementById("day").value;
@@ -47,11 +55,11 @@
  var year=document.getElementById("year").value;
  var yy=parseInt(year);
  var cc=(yy-1)/100+1;
-
+/*calculator*/
  var result=parseInt( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7 ;
  var boyNames=["Kwasi","Kwadwo","Dejong","Kwaku","Yaw","Kofi","Kwame"];
  var girlNames=["Akosua"," Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
- if (document.getElementById("gender").checked)
+ if (document.getElementById("gender").checked);
  {
    var gender='male';
  }
